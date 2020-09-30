@@ -26,7 +26,7 @@ const upload = multer({
   }
 })
 
-mongoose.connect("mongodb://localhost/student-db", {
+mongoose.connect("mongodb+srv://gem:<password>@cluster0.ihone.mongodb.net/<dbname>?retryWrites=true&w=majority", {
     useNewUrlParser: true
 })
 
