@@ -1,0 +1,44 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.scroller {
+}
+
+.login {
+  background-image: url(../../assets/img/overview.jpg);
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.scroller_login {
+  background-image: url(../../assets/img/overview.jpg);
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.scroller {
+  background-image: url(../../assets/img/overview.jpg);
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.scroller_login {
+  background-image: url(../../assets/img/underwater.jpeg);
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+

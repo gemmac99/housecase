@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Minecrafter';
+	src: url(../../assets/fonts/Minecrafter.eot) format('embedded-opentype'),
+	url(../../assets/fonts/Minecrafter.eot) format('embedded-opentype'),
+	url(../../assets/fonts/Minecrafter.woff2) format('woff2'),
+	url(../../assets/fonts/Minecrafter.woff) format('woff'),
+	url(../../assets/fonts/Minecrafter.ttf) format('truetype'),
+	url(../../assets/fonts/Minecrafter.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

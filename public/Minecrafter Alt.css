@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Minecrafter Alt';
+	src: url(../../assets/fonts/MinecrafterAlt.eot) format('embedded-opentype'),
+	url(../../assets/fonts/MinecrafterAlt.eot) format('embedded-opentype'),
+	url(../../assets/fonts/MinecrafterAlt.woff2) format('woff2'),
+	url(../../assets/fonts/MinecrafterAlt.woff) format('woff'),
+	url(../../assets/fonts/MinecrafterAlt.ttf) format('truetype'),
+	url(../../assets/fonts/MinecrafterAlt.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

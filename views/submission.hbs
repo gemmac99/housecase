@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="Minecraft.css">
+    <link rel="stylesheet" href="Minecrafter.css">
+    <link rel="stylesheet" href="Minecrafter%20Alt.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="Button-Change-Text-on-Hover.css">
+    <link rel="stylesheet" href="Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="Login-Form-Dark.css">
+    <link rel="stylesheet" href="Profile-Edit-Form-1.css">
+    <link rel="stylesheet" href="Profile-Edit-Form.css">
+    <link rel="stylesheet" href="project-card.css">
+    <link rel="stylesheet" href="Search-Field-With-Icon.css">
+    <link rel="stylesheet" href="Search-Input-responsive.css">
+    <link rel="stylesheet" href="Sticky_Background.css">
+    <link rel="stylesheet" href="Tricky-Grid---2-Column-on-Desktop--Tablet-Flip-Order-of-12-Column-rows-on-Mobile.css">
+</head>
+
+<body>
+    <section id="header" style="height: 100%;">
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container-fluid"><a class="navbar-brand" href="home" style="font-family: 'Minecrafter Alt';font-size: 40px;letter-spacing: 2px;padding-top: 0px;padding-bottom: 0px;">HouseCase</a>
+                <div class="search-container" style="width: 40%;margin-top: 0px;margin-bottom: 0px;height: 55px;"><input class="border-dark search-input" type="text" name="search-bar" placeholder="Search for other players' submissions" style="font-family: Minecraft;font-size: 15px;background-color: rgba(0,0,0,0.5);color: rgb(255,255,255);">
+                    <button
+                        class="btn btn-dark search-btn" type="button"> <i class="fa fa-search"></i></button>
+                </div><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse"
+                    id="navbarResponsive">
+                    <div class="float-left float-md-right mt-5 mt-md-0 search-area"></div>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation" id="link_home"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="userprofile" style="font-family: Minecraft;letter-spacing: 2px;">My Profile</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="submission" style="font-family: Minecraft;letter-spacing: 2px;">Submit A House</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="text-center masthead" id="header" style="background-image: url(&quot;img/construction.jpg&quot;);height: 100%;">
+            <div class="container">
+                <div class="overlay" style="background-color: rgb(30,30,30);"></div>
+                <div class="row" style="padding-top: 120px;">
+                    <div class="col-lg-8 text-center m-auto">
+                        <div id="welcome" style="width: 100%;"></div>
+                        <div class="row" id="userpic"><img class="d-none d-xl-flex" data-bs-hover-animate="tada" src="img/portal.gif" style="width: 150px;margin-left: auto;margin-right: auto;"></div>
+                        <div class="row text-center" id="welcome_bar">
+                            <p data-bs-hover-animate="rubberBand" id="username" style="font-family: Minecrafter;font-weight: 300;font-size: 40px;color: rgb(255,245,0);margin-top: 0px;margin-bottom: 0px;height: 100%;letter-spacing: 2px;width: 100%;"><br><strong>SUBMISSIONS</strong><br><br></p>
+                        </div>
+                        <div id="logged_in_bar1">
+                            <p id="logged_in_msg1" class="intro-text" style="font-family: Minecraft;color: rgb(255,255,255);font-size: 20px;line-height: 30px;">Fancy submitting a house suggestion ?<br></p>
+                        </div>
+                        <div id="logged_in_bar2">
+                            <p id="logged_in_msg2" class="intro-text" style="font-family: Minecraft;color: rgb(230,230,230);font-size: 20px;line-height: 30px;">Here you can submit a suggestion for a house showcase for the admins to approve and publish !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section id="content" class="scroller">
+        <div class="overlay" style="height: 100%;background-color: rgba(30,30,30,0.7);">
+            <div class="container profile profile-view" id="submission_form-1" style="height: auto;">
+                <form method="post" action="addsubmission" enctype="multipart/form-data">
+                    <div class="form-row profile-row" id="submission_form">
+                        <div class="col-md-4 relative" id="sub_pics_bar">
+                            <div class="border-dark" id="sub_cover_frame" style="max-height: 200px;width: 360px;min-width: 360px;">
+                                <div class="border rounded-0 border-dark avatar-bg center" id="sub_cover_pic" style="margin-left: 0px;max-height: 200px;width: auto;max-width: 360px;background-color: rgba(255,255,255,0);"></div>
+                            </div><label class="text-center" id="sub_pics_cap" style="font-family: Minecraft;font-weight: bold;width: 100%;padding: 15px;color: rgb(255,255,255);">Screenshots <br>(at least 5)<br></label>
+                            <input class="border-dark form-control" type="file" id="sub_pics_upload" name="avatar-file" style="font-family: Minecraft;height: 46px;background-color: rgba(255,255,255,0);color: rgb(205,205,205);" accept="image/*" multiple="" required="">
+                            <hr><label class="text-center" id="sub_pics_cap-1" style="font-family: Minecraft;font-weight: bold;width: 100%;padding: 15px;font-size: 20px;color: rgb(255,255,255);">Thumbnail Previews:<br></label>
+                            <div class="form-row text-center"
+                                id="thumb_div">
+                                <div id="thumb_box-1" style="padding-left: 0px;">
+                                    <div id="thumb_frame-1" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-1" class="text-right thumbnail" href="img/dirt_block.png" target="_blank"><img id="thumb_pic-1" class="img-responsive" src="img/dirt_block.png" style="max-width: 100px;"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 text-right" id="sub_form_col">
+                            <h1 class="text-center" id="sub_form_header" style="font-family: Minecrafter;font-weight: bold;padding: 25px;color: rgb(255,255,255);background-color: rgb(71,122,30);">SUBMISSION FORM</h1>
+                            <hr>
+                            <div class="form-group text-left" id="sub_title_bar"><label id="sub_title_cap" style="font-family: Minecraft;font-weight: bold;color: rgb(255,255,255);">Title/Name of the house design<br></label><label id="sub_title_req" style="font-family: Lora, serif;font-weight: normal;color: rgb(255,15,0);">*&nbsp;</label>
+                                <input class="form-control" type="text" id="sub_title" autocomplete="off" required="" name="title" style="height: 40px;font-family: ABeeZee, sans-serif;"></div>
+                            <div class="form-group text-left" id="sub_author_bar">
+                                <input class="form-control" type="hidden" id="sub_author" autocomplete="on" value={{username}} name="un" style="height: 40px;font-family: ABeeZee, sans-serif;"></div>
+                            <div class="form-group text-left" id="sub_email_bar"><label id="sub_email_cap" style="font-family: Minecraft;font-weight: bold;color: rgb(255,255,255);">Email</label><label id="sub_email_req" style="font-family: Lora, serif;font-weight: normal;color: rgb(255,15,0);">*&nbsp;</label>
+                                <input class="form-control" type="email" id="sub_email" autocomplete="on" required="" name="email" style="height: 40px;font-family: ABeeZee, sans-serif;"></div>
+                            <div class="form-group text-left" id="sub_dlink_bar" style="color: rgb(255,255,255);"><label id="sub_dlink_cap" style="font-family: Minecraft;font-weight: bold;">Download link</label><label id="sub_dlink_req" style="font-family: Lora, serif;font-weight: normal;color: rgb(255,15,0);">*&nbsp;</label>
+                            <input class="form-control" type="text" id="sub_dlink" autocomplete="off" required="" name="dlink" style="height: 40px;font-family: ABeeZee, sans-serif;"></div>
+                            <div class="form-group text-left" id="sub_desc_bar"><label id="sub_desc_cap" style="font-family: Minecraft;font-weight: bold;color: rgb(255,255,255);">Short description</label><textarea class="form-control" name= "description" id="sub_desc" style="font-family: ABeeZee, sans-serif;height: 130px;"></textarea></div>
+                            <div
+                                class="form-group text-left" id="sub_tag_bar"><label id="sub_tag_cap" style="font-family: Minecraft;font-weight: bold;color: rgb(255,255,255);">Tags (at least 3)</label><label id="sub_tag_req" style="font-family: Lora, serif;font-weight: normal;color: rgb(255,15,0);">&nbsp;</label>
+                                <input
+                                    class="form-control" type="text" id="sub_tag_1" autocomplete="on" name="tag1" style="height: 40px;margin-bottom: 20px;font-family: ABeeZee, sans-serif;"><input class="form-control" type="text" id="sub_tag_2" autocomplete="on"  name="tag2" style="height: 40px;margin-bottom: 20px;font-family: ABeeZee, sans-serif;"><input class="form-control" type="text" id="sub_tag_3"
+                                        autocomplete="on"  name="tag3" style="height: 40px;margin-bottom: 20px;font-family: ABeeZee, sans-serif;"><input class="form-control" type="text" id="sub_tag_4" autocomplete="on" name="tag4" style="height: 40px;margin-bottom: 20px;font-family: ABeeZee, sans-serif;">
+                                    <input
+                                        class="form-control" type="text" id="sub_tag_3" autocomplete="on" name="tag5" style="height: 40px;margin-bottom: 20px;font-family: ABeeZee, sans-serif;"></div>
+                        <hr><label id="sub_legend_asterisk" style="font-family: Lora, serif;font-weight: normal;color: rgb(255,15,0);">*&nbsp;</label><label id="sub_legend_cap" style="font-family: Minecraft;font-weight: bold;font-size: 14px;color: rgb(142,142,142);">&nbsp;=&nbsp; &nbsp;Required</label>
+                        <div
+                            class="form-row" id="sub_button_bar">
+                            <div class="col-md-12 content-right" id="sub_button_col"><button class="btn btn-primary form-btn" id="sub_button_sub" type="submit" style="font-family: Minecraft;">SUBMIT</button><button class="btn btn-danger form-btn" id="sub_button_disc" type="reset" style="font-family: Minecraft;">DISCARD</button></div>
+                    </div>
+            </div>
+        </div>
+        </form>
+        </div>
+        </div>
+    </section>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bs-init.js"></script>
+    <script src="clean-blog.js"></script>
+    <script src="current-day.js"></script>
+    <script src="Profile-Edit-Form.js"></script>
+</body>
+
+</html>

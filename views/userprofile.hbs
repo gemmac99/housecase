@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="Minecraft.css">
+    <link rel="stylesheet" href="Minecrafter.css">
+    <link rel="stylesheet" href="Minecrafter%20Alt.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="Button-Change-Text-on-Hover.css">
+    <link rel="stylesheet" href="Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="Login-Form-Dark.css">
+    <link rel="stylesheet" href="Profile-Edit-Form-1.css">
+    <link rel="stylesheet" href="Profile-Edit-Form.css">
+    <link rel="stylesheet" href="project-card.css">
+    <link rel="stylesheet" href="Search-Field-With-Icon.css">
+    <link rel="stylesheet" href="Search-Input-responsive.css">
+    <link rel="stylesheet" href="Sticky_Background.css">
+    <link rel="stylesheet" href="Tricky-Grid---2-Column-on-Desktop--Tablet-Flip-Order-of-12-Column-rows-on-Mobile.css">
+</head>
+
+<body>
+    <section id="header" style="height: 100%;">
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container-fluid"><a class="navbar-brand" href="home" style="font-family: 'Minecrafter Alt';font-size: 40px;letter-spacing: 2px;padding-top: 0px;padding-bottom: 0px;">HouseCase</a>
+                <div class="search-container" style="width: 40%;margin-top: 0px;margin-bottom: 0px;height: 55px;"><input class="border-dark search-input" type="text" name="search-bar" placeholder="Search for other players' submissions" style="font-family: Minecraft;font-size: 15px;background-color: rgba(0,0,0,0.5);color: rgb(255,255,255);">
+                    <button
+                        class="btn btn-dark search-btn" type="button"> <i class="fa fa-search"></i></button>
+                </div><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse"
+                    id="navbarResponsive">
+                    <div class="float-left float-md-right mt-5 mt-md-0 search-area"></div>
+                    <ul class="nav navbar-nav ml-auto" style="width: 430px;">
+                        <li class="nav-item" role="presentation" id="link_home"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="userprofile" style="font-family: Minecraft;letter-spacing: 2px;">My Profile</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="submission" style="font-family: Minecraft;letter-spacing: 2px;">Submit A House</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="logout" style="font-family: Minecraft;letter-spacing: 2px;">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="text-center masthead" id="header" style="background-image: url(&quot;img/waterflow.gif&quot;);height: 100%;">
+            <div class="container">
+                <div class="overlay" style="height: 100%;"></div>
+                <div class="row" style="padding-top: 120px;">
+                    <div class="col-lg-8 text-center m-auto">
+                        <div id="welcome" style="width: 100%;"></div>
+                        <div class="row" id="userpic"><img class="d-none d-xl-flex" data-bs-hover-animate="tada" src="img/avatar.gif" style="width: 200px;margin-left: auto;margin-right: auto;"></div>
+                        <div class="row text-center" id="welcome_bar">
+                            <p data-bs-hover-animate="rubberBand" id="username" style="font-family: Minecrafter;font-weight: 300;font-size: 40px;color: rgb(0,209,255);margin-top: 0px;margin-bottom: 0px;height: 100%;letter-spacing: 2px;width: 100%;"><br><strong>{{username}}</strong><br><br></p>
+                        </div>
+                        <div id="logged_in_bar1">
+                            <p id="logged_in_msg1" class="intro-text" style="font-family: Minecraft;color: rgb(255,255,255);font-size: 20px;line-height: 30px;">Welcome to your profile !<br></p>
+                        </div>
+                        <div id="logged_in_bar2">
+                            <p id="logged_in_msg2" class="intro-text" style="font-family: Minecraft;color: rgb(230,230,230);font-size: 20px;line-height: 30px;">Check out the designs you've submitted !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section id="content" class="scroller">
+        <div class="overlay" style="height: 100%;color: rgb(0,0,0);background-color: rgba(30,30,30,0.7);">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="post-preview">
+                            <h2 class="text-center border rounded border-dark post-title" style="font-style: normal;font-weight: bold;font-family: Minecrafter;font-size: 60px;color: rgb(255,255,255);margin-top: 100px;background-color: rgb(71,122,30);padding-top: 15px;padding-bottom: 15px;">Your submissions :)</h2>
+                            <h3 class="text-center post-subtitle" style="padding-bottom: 61px;font-size: 15px;font-weight: 300;font-family: Minecraft;color: rgb(255,255,255);">( These are so cool :O )</h3>
+
+
+                            {{#each Posts}}
+                            <div class="container" id="search_result_container" style="margin-right: auto;margin-left: auto;padding: 15px;width: 100%;">
+                                <div class="row" id="search_result_row" style="height: auto;background-color: rgba(51,51,51,0.7);width: 100%;margin-left: 0px;">
+                                    <div class="float-left" id="search_result_pic_frame" style="height: 150px;width: 220px;"><a id="search_result_pic_link" href="viewpost{{_id}}" style="width: 100%;height: 100%;"><img id="search_result_pic" class="img-responsive" src="/uploads/{{_id}}" style="margin-right: 0px;height: 100%;width: 100%;"></a></div>
+                                    <div
+                                        class="col float-right" id="search_result_detail_bar" style="width: 100%;padding-right: 0px;padding-left: 0px;margin-left: 20px;">
+                                        <div id="search_result_detail_title_div" style="width: 100%;margin-top: 5px;height: auto;"><a id="search_result_detail_title" href="viewpost{{_id}}" style="width: 100%;color: rgb(255,255,255);font-family: Minecraft;font-size: 25px;font-weight: bold;line-height: 30px;">  {{title}} 
+                                        </a></div>
+                                        <div id="search_result_detail_author_div"
+                                            style="width: 100%;margin-top: 4px;"><a id="search_result_detail_author" href="userprofile" style="width: 100%;color: rgb(255,255,255);font-family: Minecraft;font-size: 17px;font-weight: normal;line-height: 20px;letter-spacing: 0.5px;">{{username}} </a></div>
+                                        <div
+                                            id="search_result_detail_tags_div" style="width: auto;">
+                                            <p id="search_result_detail_tags_label" style="font-family: Minecraft;width: auto;font-weight: 300;font-size: 12px;color: rgb(200,200,200);margin: 0px;margin-top: 30px;"><strong>Tags:&nbsp;</strong><br></p><a id="search_result_detail_tags-1" href="#" style="width: 100%;color: rgb(200,200,200);font-family: Minecraft;font-size: 15px;font-weight: normal;line-height: 20px;margin-right: 10px;"></a>
+                                            <a
+                                                id="search_result_detail_tags-2" href="#" style="width: 100%;color: rgb(200,200,200);font-family: Minecraft;font-size: 15px;font-weight: normal;line-height: 20px;margin-right: 10px;"></a><a id="search_result_detail_tags-3" href="#" style="width: 100%;color: rgb(200,200,200);font-family: Minecraft;font-size: 15px;font-weight: normal;line-height: 20px;margin-right: 10px;"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <hr>
+            </div>
+            <section>
+                <div class="container" id="post_frame">
+                    <div class="row" id="post_title_bar" style="background-color: rgb(97,55,31);padding: 10px;"><a class="text-center" href="viewpost" style="width: 100%;font-size: 50px;color: rgb(255,255,255);font-family: Minecrafter;">HOUSE DESIGN TITLE<br></a></div>
+                    <div class="row" id="post_pic_bar" style="padding-top: 40px;"><img class="img-fluid d-flex mx-auto" id="post_pic" src="img/house_chan_sample/cover.png" style="width: 750px;"></div>
+                    <div class="row" id="post_detail_bar">
+                        <div id="post_detail_margins" class="bg-faded p-5 rounded" style="color: rgb(255,255,255);padding: 49px;width: 100%;">
+                            <div class="row" id="post_desc_bar" style="padding: 15px;">
+                                <h1 class="text-center" id="post_desc_head" style="width: 100%;font-family: Minecraft;font-size: 25px;color: rgb(0,209,255);">Description :</h1>
+                                <p class="text-center mb-0" id="post_desc" style="font-family: Minecraft;font-size: 20px;margin-top: 15px;width: 100%;">Sample description</p>
+                            </div>
+                            <div class="row text-center" id="post_preview_bar" style="padding: 15px;margin-top: 25px;">
+                                <h1 class="text-center" id="post_preview_head" style="width: 100%;font-family: Minecraft;font-size: 25px;color: rgb(20,255,0);">Interested ?</h1><a href="viewpost" style="margin-top: 20px;margin-left: 370px;"><button class="btn btn-primary text-center border-success" id="post_preview_button-1" type="button" style="background-color: #027100;width: 300px;font-family: Minecraft;">Preview More</button></a></div>
+                            <div
+                                class="row text-center" id="post_delete_bar" style="padding: 15px;margin-top: 25px;">
+                                <h1 class="text-center" id="post_delete_head" style="width: 100%;font-family: Minecraft;font-size: 25px;color: rgb(255,46,46);">Need it gone ? :(</h1><button class="btn btn-primary text-center border-warning" id="post_delete_button" type="button" style="background-color: #f00000;width: 300px;margin-left: 370px;font-family: Minecraft;margin-top: 20px;">DELETE POST</button></div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        </div>
+    </section>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bs-init.js"></script>
+    <script src="clean-blog.js"></script>
+    <script src="current-day.js"></script>
+    <script src="Profile-Edit-Form.js"></script>
+</body>
+
+</html>

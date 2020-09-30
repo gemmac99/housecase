@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="Minecraft.css">
+    <link rel="stylesheet" href="Minecrafter.css">
+    <link rel="stylesheet" href="Minecrafter%20Alt.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="Button-Change-Text-on-Hover.css">
+    <link rel="stylesheet" href="Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="Login-Form-Dark.css">
+    <link rel="stylesheet" href="Profile-Edit-Form-1.css">
+    <link rel="stylesheet" href="Profile-Edit-Form.css">
+    <link rel="stylesheet" href="project-card.css">
+    <link rel="stylesheet" href="Search-Field-With-Icon.css">
+    <link rel="stylesheet" href="Search-Input-responsive.css">
+    <link rel="stylesheet" href="Sticky_Background.css">
+    <link rel="stylesheet" href="Tricky-Grid---2-Column-on-Desktop--Tablet-Flip-Order-of-12-Column-rows-on-Mobile.css">
+</head>
+
+<body>
+    <section id="header" style="height: 100%;width: 100%;">
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container-fluid"><a class="navbar-brand" href="home" style="font-family: 'Minecrafter Alt';font-size: 40px;letter-spacing: 2px;padding-top: 0px;padding-bottom: 0px;">HouseCase</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="float-left float-md-right mt-5 mt-md-0 search-area"></div>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="userprofile" style="font-family: Minecraft;letter-spacing: 2px;">My Profile</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="submission" style="font-family: Minecraft;letter-spacing: 2px;">Submit A House</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="text-center masthead" id="header" style="background-image: url(&quot;img/reflection.png&quot;);margin-bottom: 0px;height: 100%;">
+            <div class="container">
+                <div class="overlay" style="margin-right: auto;height: 100%;"></div>
+                <div class="row" style="padding-top: 120px;height: 100%;">
+                    <div class="col-lg-8 text-center m-auto">
+                        <div id="welcome" style="width: 100%;"></div>
+                        <div class="row" id="userpic"><img class="d-none d-xl-flex" data-bs-hover-animate="tada" src="img/funky.gif" style="width: 170px;margin-left: auto;margin-right: auto;"></div>
+                        <div class="row text-center d-inline-flex" id="welcome_bar" style="margin-right: auto;margin-left: auto;width: auto;">
+                            <div id="welcome_msg_div" style="width: auto;">
+                                <p id="welcome_msg" style="font-family: Minecrafter;font-weight: 300;font-size: 40px;color: rgb(255,255,255);margin-top: 0px;margin-bottom: 0px;height: 100%;letter-spacing: 2px;"><br><strong>Welcome,&nbsp;</strong><br><br></p>
+                            </div>
+                            <div class="float-right" id="username_bar" style="width: auto;">
+                                <p class="float-right" data-bs-hover-animate="rubberBand" id="username" style="font-family: Minecrafter;font-weight: 300;font-size: 40px;color: rgb(118,255,0);margin-top: 0px;margin-bottom: 0px;height: 100%;letter-spacing: 2px;width: auto;"><br><strong>{{username}}</strong><br><br></p>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div id="logged_in_bar1">
+                            <p id="logged_in_msg1" class="intro-text" style="font-family: Minecraft;color: rgb(118,255,0);font-size: 20px;line-height: 30px;">You're logged in !<br></p>
+                        </div>
+                        <div id="logged_in_bar2">
+                            <p id="logged_in_msg2" class="intro-text" style="font-family: Minecraft;color: rgb(230,230,230);font-size: 20px;line-height: 30px;">Feel free to check out your profile or search for other people's designs and rate them !</p>
+                        </div>
+                        <form method="POST" action="searchresult"> <!--TO MAKE THE SEARCH WORK-->
+                            <div class="search-container" style="width: 100%;"><input class="border-dark search-input" type="text" id="search_input" name="srchbar" placeholder="Search for other players' submissions" style="font-family: Minecraft;font-size: 20px;background-color: rgba(0,0,0,0.5);color: rgb(255,255,255);">
+                                <button
+                                    class="btn btn-dark search-btn" type="submit"> <i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bs-init.js"></script>
+    <script src="clean-blog.js"></script>
+    <script src="current-day.js"></script>
+    <script src="Profile-Edit-Form.js"></script>
+</body>
+
+</html>

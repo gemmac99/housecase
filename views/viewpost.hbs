@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="Minecraft.css">
+    <link rel="stylesheet" href="Minecrafter.css">
+    <link rel="stylesheet" href="Minecrafter%20Alt.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="Button-Change-Text-on-Hover.css">
+    <link rel="stylesheet" href="Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="Login-Form-Dark.css">
+    <link rel="stylesheet" href="Profile-Edit-Form-1.css">
+    <link rel="stylesheet" href="Profile-Edit-Form.css">
+    <link rel="stylesheet" href="project-card.css">
+    <link rel="stylesheet" href="Search-Field-With-Icon.css">
+    <link rel="stylesheet" href="Search-Input-responsive.css">
+    <link rel="stylesheet" href="Sticky_Background.css">
+    <link rel="stylesheet" href="Tricky-Grid---2-Column-on-Desktop--Tablet-Flip-Order-of-12-Column-rows-on-Mobile.css">
+</head>
+
+<body>
+    <section id="header" style="height: 100%;">
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container-fluid"><a class="navbar-brand" href="home" style="font-family: 'Minecrafter Alt';font-size: 40px;letter-spacing: 2px;padding-top: 0px;padding-bottom: 0px;">HouseCase</a>
+                <div class="search-container" style="width: 40%;margin-top: 0px;margin-bottom: 0px;height: 55px;"><input class="border-dark search-input" type="text" name="search-bar" placeholder="Search for other players' submissions" style="font-family: Minecraft;font-size: 15px;background-color: rgba(0,0,0,0.5);color: rgb(255,255,255);">
+                    <button
+                        class="btn btn-dark search-btn" type="button"> <i class="fa fa-search"></i></button>
+                </div><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse"
+                    id="navbarResponsive">
+                    <div class="float-left float-md-right mt-5 mt-md-0 search-area"></div>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation" id="link_home"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="userprofile" style="font-family: Minecraft;letter-spacing: 2px;">My Profile</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="submission" style="font-family: Minecraft;letter-spacing: 2px;">Submit A House</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="text-center masthead" id="header" style="background-image: url(&quot;img/interior.jpg&quot;);height: 100%;">
+            <div class="container">
+                <div class="overlay" style="height: 100%;"></div>
+                <div class="row" style="padding-top: 120px;">
+                    <div class="col-lg-8 text-center m-auto">
+                        <div id="welcome" style="width: 100%;"></div>
+                        <div class="row" id="userpic" style="margin-top: 0px;margin-bottom: 0px;padding-top: 10px;padding-bottom: 10px;"><img class="d-none d-xl-flex" data-bs-hover-animate="tada" src="img/campfire.gif" style="width: 150px;margin-left: auto;margin-right: auto;"></div>
+                        <div class="row text-center" id="welcome_bar">
+                            <p data-bs-hover-animate="rubberBand" id="username" style="font-family: Minecrafter;font-weight: 300;font-size: 40px;color: rgb(255,107,0);margin-top: 0px;margin-bottom: 0px;height: 100%;letter-spacing: 2px;width: 100%;line-height: 35px;">DING DONG</p>
+                        </div>
+                        <div id="logged_in_bar1">
+                            <p id="logged_in_msg1" class="intro-text" style="font-family: Minecraft;color: rgb(255,255,255);font-size: 20px;line-height: 30px;">Welcome to your (possible) future home !<br></p>
+                        </div>
+                        <div id="logged_in_bar2">
+                            <p id="logged_in_msg2" class="intro-text" style="font-family: Minecraft;color: rgb(230,230,230);font-size: 20px;line-height: 30px;">Feel free to hang out for a while and check the place out :)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section id="content" class="scroller">
+        <div class="overlay" style="height: 100%;color: rgb(0,0,0);background-color: rgba(30,30,30,0.7);">
+            <section>
+                <div class="container" id="post_frame" style="padding: 35px;">
+                    <div class="row" id="post_title_bar">
+                        {{#each posts}}
+                        <h1 class="text-center" id="post_title" style="width: 100%;color: rgb(255,255,255);font-family: Minecrafter;font-size: 50px;font-weight: normal;padding: 10px;background-color: rgb(112,178,55);">{{title}}<br></h1>
+                    </div>
+                    <div class="row" id="post_pic_bar" style="padding-top: 40px;"><img class="img-fluid d-flex mx-auto" id="post_pic" src="/uploads/{{_id}}" style="width: 750px;"></div>
+                    <div class="row" id="post_detail_bar">
+                        <div id="post_detail_margins" class="bg-faded p-5 rounded" style="color: rgb(255,255,255);padding: 49px;width: 100%;">
+                            <div class="row" id="post_thumb_bar" style="padding: 15px;padding-left: 90px;">
+                                <div id="thumb_box-1" style="padding-left: 0px;">
+                                    <div id="thumb_frame-1" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-1" class="text-right thumbnail" href="img/house_chan_sample/cover.png" target="_blank"><img id="thumb_pic-1" class="img-responsive" src="img/house_chan_sample/cover.png" style="max-width: 150px;"></a></div>
+                                </div>
+                                <div id="thumb_box-2" style="padding-left: 0px;">
+                                    <div id="thumb_frame-2" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-2" class="text-right thumbnail" href="img/house_chan_sample/front.png" target="_blank"><img id="thumb_pic-2" class="img-responsive" src="img/house_chan_sample/front.png" style="max-width: 150px;"></a></div>
+                                </div>
+                                <div id="thumb_box-3" style="padding-left: 0px;">
+                                    <div id="thumb_frame-3" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-3" class="text-right thumbnail" href="img/house_chan_sample/layout.png" target="_blank"><img id="thumb_pic-3" class="img-responsive" src="img/house_chan_sample/layout.png" style="max-width: 150px;"></a></div>
+                                </div>
+                                <div id="thumb_box-4" style="padding-left: 0px;">
+                                    <div id="thumb_frame-4" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-4" class="text-right thumbnail" href="img/house_chan_sample/bedroom.png" target="_blank"><img id="thumb_pic-4" class="img-responsive" src="img/house_chan_sample/bedroom.png" style="max-width: 150px;"></a></div>
+                                </div>
+                                <div id="thumb_box-5" style="padding-left: 0px;">
+                                    <div id="thumb_frame-5" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-5" class="text-right thumbnail" href="img/house_chan_sample/bedview.png" target="_blank"><img id="thumb_pic-5" class="img-responsive" src="img/house_chan_sample/bedview.png" style="max-width: 150px;"></a></div>
+                                </div>
+                                <div id="thumb_box-6" style="padding-left: 0px;">
+                                    <div id="thumb_frame-6" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-6" class="text-right thumbnail" href="img/house_chan_sample/livingroom.png" target="_blank"><img id="thumb_pic-6" class="img-responsive" src="img/house_chan_sample/livingroom.png" style="max-width: 150px;"></a></div>
+                                </div>
+                                <div id="thumb_box-7" style="padding-left: 0px;">
+                                    <div id="thumb_frame-7" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-7" class="text-right thumbnail" href="img/house_chan_sample/workshop.png" target="_blank"><img id="thumb_pic-7" class="img-responsive" src="img/house_chan_sample/workshop.png" style="max-width: 150px;"></a></div>
+                                </div>
+                                <div id="thumb_box-8" style="padding-left: 0px;">
+                                    <div id="thumb_frame-8" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-8" class="text-right thumbnail" href="img/house_chan_sample/dining.png" target="_blank"><img id="thumb_pic-8" class="img-responsive" src="img/house_chan_sample/dining.png" style="max-width: 150px;"></a></div>
+                                </div>
+                                <div id="thumb_box-9" style="padding-left: 0px;">
+                                    <div id="thumb_frame-9" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-9" class="text-right thumbnail" href="img/house_chan_sample/skyview.png" target="_blank"><img id="thumb_pic-9" class="img-responsive" src="img/house_chan_sample/skyview.png" style="max-width: 150px;"></a></div>
+                                </div>
+                                <div id="thumb_box-10" style="padding-left: 0px;">
+                                    <div id="thumb_frame-10" class="col-sm-4 col-xs-6 col-md-3 col-lg-3" style="padding: 10px;padding-left: 10px;padding-right: 10px;padding-top: 10px;"><a id="thumb_link-10" class="text-right thumbnail" href="img/house_chan_sample/back.png" target="_blank"><img id="thumb_pic-10" class="img-responsive" src="img/house_chan_sample/back.png" style="max-width: 150px;"></a></div>
+                                </div>
+                            </div>
+                            <div class="row" id="post_desc_bar" style="padding: 15px;">
+                                <h1 class="text-center" id="post_desc_head-1" style="width: 100%;font-family: Minecraft;font-size: 25px;color: rgb(0,209,255);">Description :</h1>
+                                <p class="text-center mb-0" id="post_desc-1" style="font-family: Minecraft;font-size: 20px;margin-top: 15px;width: 100%;line-height: 25px;">{{description}}</p>
+                            </div>
+                            <div class="row" id="post_author_bar" style="padding: 15px;">
+                                <h1 class="text-center" id="post_author_head" style="width: 100%;font-family: Minecraft;font-size: 25px;color: rgb(255,86,187);">Submitted by :</h1>
+                                <p class="text-center mb-0" id="post_author" style="font-family: Minecraft;font-size: 20px;margin-top: 15px;width: 100%;">{{username}}</p>
+                            </div>
+                            <div class="row" id="post_dload_bar" style="padding: 15px;">
+                                <h1 class="text-center" id="post_dload_head" style="width: 100%;font-family: Minecraft;font-size: 25px;color: rgb(5,255,0);">Download Link :</h1><a class="text-center" href="#" style="width: 100%;height: 20px;margin: 0px;margin-top: 15px;font-family: Minecraft;color: rgb(255,255,255);">{{dLink}}<br></a></div>
+                            <div class="row"
+                                id="post_tags_bar" style="padding: 15px;">
+                                <h1 class="text-center" id="post_tags_head" style="width: 100%;font-family: Minecraft;font-size: 25px;color: rgb(255,138,0);"></h1>
+                                <div class="d-inline-flex" id="post_tags_div" style="width: auto;margin-right: auto;margin-left: auto;">
+                                    <p class="text-center mb-0" id="post_tag-1" style="font-family: Minecraft;font-size: 20px;margin-top: 15px;width: auto;margin-right: 10px;"></p>
+                                    <p class="text-center mb-0" id="post_tag-2" style="font-family: Minecraft;font-size: 20px;margin-top: 15px;width: auto;margin-right: 10px;"><br></p>
+                                    <p class="text-center mb-0" id="post_tag-3" style="font-family: Minecraft;font-size: 20px;margin-top: 15px;width: auto;margin-right: 10px;"></p>
+                                </div>
+                            </div>
+                            <div class="row text-center" id="post_delete_bar" style="padding: 15px;margin-top: 25px;">
+                                <h1 class="text-center" id="post_delete_head" style="width: 100%;font-family: Minecraft;font-size: 25px;color: rgb(255,46,46);">Need it gone ? :(</h1><a href="/delete{{_id}}"><button class="btn btn-primary text-center border-warning" id="post_delete_button" type="button"  style="background-color: #f00000;width: 300px;margin-left: auto;font-family: Minecraft;margin-top: 20px;margin-right: auto;">DELETE POST</button></a></div>
+                                {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bs-init.js"></script>
+    <script src="clean-blog.js"></script>
+    <script src="current-day.js"></script>
+    <script src="Profile-Edit-Form.js"></script>
+</body>
+
+</html>
